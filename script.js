@@ -9,7 +9,7 @@ function threeSum(arr, target) {
          let currSum=arr[i]+arr[j]+arr[k];
 		 if(Math.abs(target-currSum)<Math.abs(target-sum))
 			 sum=currSum;
-		 if(target<arr[j]){
+		 if(target>currSum){
 			 j++;
 		 }else{
 			 k--;}
