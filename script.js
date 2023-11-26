@@ -1,6 +1,6 @@
 function threeSum(arr, target) {
 // write your code here
-	let sum=arr[0]+[1]+[2];
+	let sum=arr[0]+arr[1]+arr[2];
 	arr.sort((a, b) => a - b);
 	for(let i=0;i<arr.length-2;i++){
 		let j=i+1;
@@ -11,8 +11,8 @@ function threeSum(arr, target) {
 			 sum=currSum;
 		 if(target<arr[j]){
 			 j++;
-		 }else
-			 k--;
+		 }else{
+			 k--;}
 		}
 	}
 	return sum;
